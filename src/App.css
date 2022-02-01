@@ -1,7 +1,128 @@
+@font-face {
+  font-family: 'Roboto-Bold';
+  src:  url(./assets/fonts/Roboto-Bold.ttf) format('woff');
+}
+@font-face {
+  font-family: 'Roboto-Regular';
+  src:  url(./assets/fonts/Roboto-Regular.ttf) format('woff');
+}
 .App {
   text-align: center;
 }
+.main{
+  font-family: "Roboto-Regular";
+  background-color: #E7F5FD;
+}
+.subtitle{
+  font-family: "Roboto-Bold";
+  color: "black";
+  font-size: 37px;
+  color: #303030;
+}
+.categories{
+  margin-top: 5px;
+  display: flex;
+  flex-direction: row;
+}
+.inputtitle{
+  font-family: "Roboto-Regular";
+  color: "black";
+  font-size: 14px;
+  color: #3B97CB;
+}
+.inputtext{
+  box-sizing: border-box;
+  padding: 10px;
+  border-radius: 10px;
+  font-family : "Roboto-Regular";
+  border: 1px solid #0099EE;
+  border-radius: 4px;
+  font-size: 14px;
+  width: 100%;
+}
+.button {
+  background-color: #56E4A0; /* Green */
+  border: none;
+  color: white;
+  padding: 10px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-family: "Roboto-Bold";
+}
+.publish-button {
+  background-color: #56E4A0;
+  width: 100%; 
+  color: white; 
+  border: 0px;
+}
+.publish-button:hover {
+  background-color: #4fc78d;
+  color: white;
+}
 
+.sidebar-button {
+  flex-direction: row;
+  display: flex;
+  background-color: white;
+  width: 100%; 
+  color: #3B97CB; 
+  border: 0px;
+  align-items: center;
+  justify-content: left;
+  text-align: left;
+}
+.sidebar-button-none {
+  flex-direction: row;
+  display: flex;
+  background-color: #3B97CB;
+  width: 100%; 
+  color: white; 
+  border: 0px;
+  align-items: center;
+  justify-content: left;
+  text-align: left;
+  font-family: "Roboto-Regular";
+}
+.sidebars{
+  margin: 0;
+  padding: 14px;
+  width: 200px;
+  background-color: #3B97CB;
+  position: fixed;
+  height: 100vh;
+  overflow: auto;
+  z-index: 1;
+}
+.navbars{
+  display: flex;
+  background-color: white;
+  height: 50px;
+  width: 100%;
+  position: fixed;
+  align-items: center;
+  justify-content: right;
+  top: 0;
+  left: 0;
+}
+.content{
+  margin-left: 230px;
+  padding-top: 75px;
+  padding-left: 15px;
+  min-height: 100vh;
+  background-color: #E7F5FD;
+  flex-direction: row;
+  display: flex;
+}
+.content-main{
+width: 70%;
+}
+.content-image{
+
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;
