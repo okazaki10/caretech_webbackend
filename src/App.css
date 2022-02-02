@@ -9,6 +9,9 @@
 .App {
   text-align: center;
 }
+input[type="file"] {
+  display: none;
+}
 .main{
   font-family: "Roboto-Regular";
   background-color: #E7F5FD;
@@ -110,7 +113,7 @@
 }
 .content{
   margin-left: 230px;
-  padding-top: 75px;
+  padding-top: 50px;
   padding-left: 15px;
   min-height: 100vh;
   background-color: #E7F5FD;
@@ -118,10 +121,18 @@
   display: flex;
 }
 .content-main{
+  padding-right: 15px;
+  padding-top: 15px;
 width: 70%;
+
 }
 .content-image{
-
+  display:flex;
+  align-items: flex-start;
+justify-content: center;
+padding-top: 15px;
+width: 30%;
+background-color: #f5fcff;
 }
 .App-logo {
   height: 40vmin;

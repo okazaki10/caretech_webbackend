@@ -12,13 +12,18 @@ const index = async (req, res) => {
 
 const insertProduct = async (req, res) => {
     try {
-        const date = new Date()
-        const isoString = date.toISOString().replace(/T/, '_').replace(/\..+/, '').replace(/:/g, '-')
-        var fileName = PATH + isoString + date.getMilliseconds() + "_" + req.body.name + ".jpg"
-        fs.writeFile(fileName, req.body.base64_image, 'base64', function (err) {
-            console.log(err);
-            fileName = "empty.jpg"
-        });
+        var fileName = ""
+        if (req.body.base64_image) {
+            const date = new Date()
+            const isoString = date.toISOString().replace(/T/, '_').replace(/\..+/, '').replace(/:/g, '-')
+            fileName = PATH + isoString + date.getMilliseconds() + "_" + req.body.name + ".jpg"
+            fs.writeFile(fileName, req.body.base64_image, 'base64', function (err) {
+                console.log(err);
+                fileName = "/images/product/empty.png"
+            });
+        } else {
+            fileName = "/images/product/empty.png"
+        }
         const product = new Product({
             name: req.body.name,
             description: req.body.description,

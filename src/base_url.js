@@ -1,6 +1,6 @@
 import axios from "axios";
-export const URL = 'http://localhost:5000'
+export const SERVER = 'http://localhost:5000'
 const axiosFetch = axios.create({
-    baseURL: URL
+    baseURL: SERVER
 });
 export default axiosFetch
