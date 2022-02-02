@@ -142,7 +142,7 @@ function Homepage() {
                     <div className="inputtitle" style={{ marginTop: 15 }}>Product Name</div>
                     <input className="inputtext" onChange={(e) => { setName(e.target.value) }} value={name} style={{ marginTop: 5 }} ></input>
                     <div className="inputtitle" style={{ marginTop: 15 }}>Description</div>
-                    <input className="inputtext" onChange={(e) => { setDescription(e.target.value) }} value={description} style={{ marginTop: 5 }} ></input>
+                    <textarea className="inputtext" onChange={(e) => { setDescription(e.target.value) }} value={description} style={{ marginTop: 5,height:100 }} ></textarea>
                     <div style={{ display: "flex", flexDirection: "row", width: "100%", marginTop: 15 }}>
                         <div style={{ width: "100%" }}>
                             <div className="inputtitle">SKU</div>
