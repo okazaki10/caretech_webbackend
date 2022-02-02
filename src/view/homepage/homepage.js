@@ -91,11 +91,6 @@ function Homepage() {
     }
     return (
         <div className="main">
-            {/*
-            <nav>
-                <Link to="/hello"><input type={"button"} value={"asdsad"}></input></Link>
-            </nav>
-            */}
             <div className="navbars">
                 <div style={{ paddingRight: 20, display: "flex", flexDirection: "row",alignItems:"center" }}>
                     <img src={require('../../assets/images/profile.png')} style={{height:30,width:30,objectFit:"contain",marginRight:10}}></img>
